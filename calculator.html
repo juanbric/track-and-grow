@@ -38,48 +38,51 @@
     <div class="container mt-4">
         <br>
         <h1 class="display-4 text-center">Increase <span class="text-primary">Percentage</span> Calculator <i class="fab fa-btc text-primary"></i></h1>
-        <form id="crypto-form" class="mt-4">
+        <form id="calc-form" class="mt-4">
             <div class="form-group mx-auto col-md-4">
                 <label for="initial"><strong>Initial value</strong></label>
-                <input id="initial" type="text" class="form-control">
+                <input id="initial" type="number" class="form-control" onkeyup="showResult()">
             </div>
             <br>
             <div class="form-group mx-auto col-md-4">
-                <label for="amount"><strong>Final value</strong></label>
-                <input id="amount" type="number" class="form-control">
+                <label for="final"><strong>Final value</strong></label>
+                <input id="final" type="number" class="form-control" onkeyup="showResult()">
             </div>
             <br>
             <div class="form-group mx-auto col-md-4">
-                <label for="price"><strong>Increase %</strong></label>
-                <input id="price" type="number" class="form-control">
+                <label for="increase"><strong>Increase %</strong></label>
+                <input id="increase" type="number" class="form-control" onkeyup="showResult()">
             </div>
             <br>
             <div class="form-group mx-auto col-md-4">
-                <label for="date"><strong>Difference</strong></label>
-                <input id="date" type="text" class="form-control">
+                <label for="difference"><strong>Difference</strong></label>
+                <input id="difference" type="number" class="form-control" onkeyup="showResult()">
             </div>
             <br>
-            <input type="submit" value="Add Coin" class="btn btn-primary float-lg-end shadow">
+            <input type="submit" value="Calculate" class="btn btn-primary float-lg-end shadow">
         </form>
         <br>
         <div class="card mt-5">
             <div class="card-header">
-                <i class="fas fa-chart-line mr-1"></i>
-                  Portfolio Overview
+            <i class="fas fa-calculator"> </i>
+                    Result
             </div>
             <div class="card-body shadow">
                 <div class="table-responsive">
                     <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                         <thead>
                             <tr>
-                                <th>Coin</th>
-                                <th>Amount Bought</th>
-                                <th>Coin Price</th>
-                                <th>Date</th>
-                                <th></th>
+                                <th>Initial Value</th>
+                                <th>Final Value</th>
+                                <th>Increase %</th>
+                                <th>Difference</th>
                             </tr>
                         </thead>
                         <tbody id="crypto-list">
+                            <td id="showInitial"></td>
+                            <td id="showFinal"></td>
+                            <td id="showIncrease"></td>
+                            <td id="showDifference"></td>
                         </tbody>
                     </table>
                 </div>
@@ -88,6 +91,6 @@
     
     </div>
 
-<script src="app.js" ></script>
+<script src="js/calc.js" ></script>
 </body>
 </html>
