@@ -1,6 +1,6 @@
 # cryptoportfolio
 
-title = coin
-author = amount
-isbn = price
-        date
+instantiate
+event propagation
+static you can call it directly
+insertbefore
