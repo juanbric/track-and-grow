@@ -12,7 +12,7 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
+          <a class="navbar-brand" href="#">Crypto Portfolio</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -20,28 +20,10 @@
           <div class="collapse navbar-collapse" id="navbarColor03">
             <ul class="navbar-nav me-auto">
               <li class="nav-item">
-                <a class="nav-link active" href="#">Home
-                  <span class="visually-hidden">(current)</span>
-                </a>
+                <a class="nav-link" href="#">Dashboard</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Features</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-                <div class="dropdown-menu">
-                  <a class="dropdown-item" href="#">Action</a>
-                  <a class="dropdown-item" href="#">Another action</a>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="#">Separated link</a>
-                </div>
+                <a class="nav-link" href="#">Increase percentage calculator</a>
               </li>
             </ul>
             <form class="d-flex">
@@ -53,26 +35,26 @@
       </nav>
 
     <div class="container mt-4">
-        <h1 class="display-4 text-center">My <span class="text-primary">Crypto</span> Portfolio <i class="fab fa-btc text-primary"></i></h1><
-        <form id="crypto-form mt-4">
+        <h1 class="display-4 text-center">My <span class="text-primary">Crypto</span> Portfolio <i class="fab fa-btc text-primary"></i></h1>
+        <form id="crypto-form" class="mt-4">
             <div class="form-group mx-auto col-md-4">
-                <label for="coin">Coin</label>
+                <label for="coin"><strong>Coin</strong></label>
                 <input id="coin" type="text" class="form-control">
             </div>
             <br>
             <div class="form-group mx-auto col-md-4">
-                <label for="amount">$ Amount</label>
+                <label for="amount"><strong>Amount Bought</strong></label>
                 <input id="amount" type="number" class="form-control">
             </div>
             <br>
             <div class="form-group mx-auto col-md-4">
-                <label for="price">Price Bought</label>
+                <label for="price"><strong>Coin Price</strong></label>
                 <input id="price" type="number" class="form-control">
             </div>
             <br>
             <div class="form-group mx-auto col-md-4">
-                <label for="date">Date</label>
-                <input id="date" type="date" class="form-control">
+                <label for="date"><strong>Date</strong></label>
+                <input id="date" type="text" class="form-control">
             </div>
             <br>
             <input type="submit" value="Add Coin" class="btn btn-primary float-lg-end shadow">
@@ -89,8 +71,8 @@
                         <thead>
                             <tr>
                                 <th>Coin</th>
-                                <th>$ Amount</th>
-                                <th>Price bought</th>
+                                <th>Amount Bought</th>
+                                <th>Coin Price</th>
                                 <th>Date</th>
                                 <th></th>
                             </tr>
